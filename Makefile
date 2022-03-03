@@ -18,7 +18,7 @@ NAME := k8s-custom-iptables
 SRCS := run.sh
 
 TAG ?= 1.0
-REGISTRY=gcr.io/google_containers
+REGISTRY=gcr.io/bison-$(environment)/google_containers
 IMAGE := $(REGISTRY)/$(NAME):$(TAG)
 
 ifeq ($(REGISTRY),)
